@@ -91,7 +91,7 @@ namespace AplikasiGambarProject.Tools
             {
                 if (memberGroup.Count() > 0)
                 {
-                    this.objIntersect();
+                    //this.objIntersect();
                     GroupShape groupObject = new GroupShape();
                     foreach (DrawingObject obj in memberGroup)
                     {
@@ -103,7 +103,13 @@ namespace AplikasiGambarProject.Tools
                     this.currentObject = groupObject;
                 }
             }
-            
+            else if (e.KeyCode == System.Windows.Forms.Keys.I)
+            {
+                if (memberGroup.Count() > 0)
+                {
+                    this.objIntersect();
+                }
+            }
         }
 
         public void objIntersect()
