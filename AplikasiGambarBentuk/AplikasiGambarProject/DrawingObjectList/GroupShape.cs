@@ -39,7 +39,7 @@ namespace AplikasiGambarProject.DrawingObjectList
             }
             return false;
         }
-
+        /*
         public void objIntersect()
         {
             System.Diagnostics.Debug.WriteLine(memberGroup[0]);
@@ -54,10 +54,11 @@ namespace AplikasiGambarProject.DrawingObjectList
             Point startPoint = new Point(leftX, topY);
             Point endPoint = new Point(rightX, bottomY);
             Rect intersectionRect = new Rect(startPoint, endPoint);
+            //intersectionRect.
             memberGroup.Add(intersectionRect);
            
         }
-
+        */
         public override void move(int x, int y, int xAmount, int yAmount)
         {
             foreach (DrawingObject obj in memberGroup)

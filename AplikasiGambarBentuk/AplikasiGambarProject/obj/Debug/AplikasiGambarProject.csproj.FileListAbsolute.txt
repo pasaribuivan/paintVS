@@ -7,3 +7,4 @@ D:\ITS\SEMESTER7\KPL\New folder\DrawingToolKit\AplikasiGambarBentuk\AplikasiGamb
 D:\ITS\SEMESTER7\KPL\New folder\DrawingToolKit\AplikasiGambarBentuk\AplikasiGambarProject\obj\Debug\AplikasiGambarProject.csproj.GenerateResource.Cache
 D:\ITS\SEMESTER7\KPL\New folder\DrawingToolKit\AplikasiGambarBentuk\AplikasiGambarProject\obj\Debug\AplikasiGambarProject.exe
 D:\ITS\SEMESTER7\KPL\New folder\DrawingToolKit\AplikasiGambarBentuk\AplikasiGambarProject\obj\Debug\AplikasiGambarProject.pdb
+D:\ITS\SEMESTER7\KPL\New folder\DrawingToolKit\AplikasiGambarBentuk\AplikasiGambarProject\obj\Debug\AplikasiGambarProject.Canvas.resources

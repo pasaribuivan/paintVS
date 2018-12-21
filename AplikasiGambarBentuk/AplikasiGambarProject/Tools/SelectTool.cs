@@ -54,7 +54,7 @@ namespace AplikasiGambarProject.Tools
                     if (!multiselectProcess) memberGroup.Clear();
                     else
                     {
-                        if (!memberGroup.Any()) memberGroup.Add(this.currentObject);
+                        if (!memberGroup.Any() && this.currentObject != null) memberGroup.Add(this.currentObject);
                         memberGroup.Add(obj);
                     }
                     this.currentObject = obj;
@@ -91,7 +91,7 @@ namespace AplikasiGambarProject.Tools
             {
                 if (memberGroup.Count() > 0)
                 {
-                    //this.objIntersect();
+                    this.objIntersect();
                     GroupShape groupObject = new GroupShape();
                     foreach (DrawingObject obj in memberGroup)
                     {
@@ -103,11 +103,12 @@ namespace AplikasiGambarProject.Tools
                     this.currentObject = groupObject;
                 }
             }
+            
         }
 
         public void objIntersect()
         {
-            System.Diagnostics.Debug.WriteLine(memberGroup[0]);
+            //System.Diagnostics.Debug.WriteLine(memberGroup[0]);
             Rect r1 = (memberGroup[0] as Rect);
             Rect r2 = (memberGroup[1] as Rect);
 
@@ -119,7 +120,9 @@ namespace AplikasiGambarProject.Tools
             Point startPoint = new Point(leftX, topY);
             Point endPoint = new Point(rightX, bottomY);
             Rect intersectionRect = new Rect(startPoint, endPoint);
-            intersectionRect.ChangeState(PreviewState.GetInstance());
+            
+            intersectionRect.ChangeState(IntersectState.GetInstance());
+            
             this.canvas.AddDrawingObject(intersectionRect);
             //memberGroup.Add(intersectionRect);
 

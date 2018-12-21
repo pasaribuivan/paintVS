@@ -52,8 +52,15 @@ namespace AplikasiGambarProject
             DrawLogic();
         }
         public void RenderOnStaticView() {
-            this.pen = new Pen(Color.Black);
+            this.pen = new Pen(Color.Black);  
             pen.Width = 1.5f;
+            pen.DashStyle = DashStyle.Solid;
+            DrawLogic();
+        }
+        public void RenderOnIntersectView()
+        {
+            this.pen = new Pen(Color.Gray);
+            pen.Width = 2f;
             pen.DashStyle = DashStyle.Solid;
             DrawLogic();
         }
