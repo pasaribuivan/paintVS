@@ -87,11 +87,12 @@ namespace AplikasiGambarProject.Tools
             {
                 multiselectProcess = true;
             }
-            else if (e.KeyCode == System.Windows.Forms.Keys.G)
+            
+            else if (e.KeyCode == System.Windows.Forms.Keys.I)
             {
                 if (memberGroup.Count() > 0)
                 {
-                    //this.objIntersect();
+                    this.objIntersect();
                     GroupShape groupObject = new GroupShape();
                     foreach (DrawingObject obj in memberGroup)
                     {
@@ -101,13 +102,6 @@ namespace AplikasiGambarProject.Tools
                     groupObject.ChangeState(EditingState.GetInstance());
                     this.canvas.AddDrawingObject(groupObject);
                     this.currentObject = groupObject;
-                }
-            }
-            else if (e.KeyCode == System.Windows.Forms.Keys.I)
-            {
-                if (memberGroup.Count() > 0)
-                {
-                    this.objIntersect();
                 }
             }
         }
